@@ -7,15 +7,15 @@ import { v4 as uuidV4 } from 'uuid';
 async function run() {
     try {
         tl.setResourcePath(path.join(__dirname, 'task.json'));
-        console.log("=============== inital t1 ====================");
-        console.log(tl);
+        //console.log("=============== inital t1 ====================");
+        //console.log(tl);
         //let failOnStderr = tl.getBoolInput('failOnStderr',false);
         console.log("=================failOnStderr with false arg===============");
         //console.log(failOnStderr);
         let failOnStderr = tl.getBoolInput('failOnStderr',false);
         console.log("=================failOnStderr===============");
         console.log(failOnStderr);
-        failOnStderr = false
+        //failOnStderr = false
         console.log("=================failOnStderr after change ===============");
         console.log(failOnStderr);
         let workingDirectory = tl.getPathInput('Tag2', /*required*/ true, /*check*/ true);
@@ -100,8 +100,8 @@ async function run() {
                 console.log("=============== exitCode ====================");
                 console.log(exitCode);
                 let result = tl.TaskResult.Succeeded;
-                console.log("=============== inital t1 ====================");
-        console.log(tl);
+        //        console.log("=============== inital t1 ====================");
+      //  console.log(tl);
 
 
         // Fail on exit code.

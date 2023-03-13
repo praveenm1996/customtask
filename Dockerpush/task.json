@@ -9,7 +9,7 @@
     "author": "Praveen M",
     "version": {
         "Major": 3,
-        "Minor": 21,
+        "Minor": 25,
         "Patch": 0
     },
     "instanceNameFormat": "Echo DockerPush By Praveen M",
@@ -65,15 +65,6 @@
             "defaultValue": "",
             "required": true,
             "helpMarkDown": "Tag Name"
-        },
-        {
-            "name": "failOnStderr",
-            "type": "boolean",
-            "label": "Fail on Standard Error",
-            "defaultValue": "false",
-            "required": false,
-            "helpMarkDown": "If this is true, this task will fail if any errors are written to the StandardError stream.",
-            "groupName": "advanced"
         }
     ],
     "execution": {

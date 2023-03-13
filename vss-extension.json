@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "PraveenM",
     "name": "dockerpush",
-    "version": "3.21.0",
+    "version": "3.25.0",
     "publisher": "PraveenM",
     "targets": [
         {
