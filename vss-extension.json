@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "PraveenM",
+    "name": "dockerpush",
+    "version": "3.21.0",
+    "publisher": "PraveenM",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "DockerPush By Praveen",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "files": [
+        {
+            "path": "Dockerpush"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "Dockerpush"
+            }
+        }
+    ]
+}

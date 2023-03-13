@@ -1,0 +1,24 @@
+{
+  "name": "dockerpush",
+  "version": "3.21.0",
+  "description": "DockerPush By Praveen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Praveen M",
+  "license": "ISC",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^4.3.0",
+    "vsts-task-lib": "^2.7.0",
+    "yaml": "^1.8.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.15.0",
+    "@types/q": "^1.5.5",
+    "sync-request": "^6.1.0"
+  }
+  
+}

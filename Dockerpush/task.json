@@ -1,0 +1,92 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "2df43e7c-462a-4f89-8e3b-88ec47304a10",
+    "name": "dockerpush",
+    "friendlyName": "DockerPush By Praveen",
+    "description": "DockerPush By Praveen",
+    "helpMarkDown": "",
+    "category": "Deploy",
+    "author": "Praveen M",
+    "version": {
+        "Major": 3,
+        "Minor": 21,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Echo DockerPush By Praveen M",
+    "inputs": [
+        {
+            "name": "dockercommand",
+            "type": "pickList",
+            "label": "Build OR Push",
+            "defaultValue": "",
+            "options": {
+                "build": "Build",
+                "push":"Push"
+            },
+            "required": true,
+            "helpMarkDown": "Command Build Or Push"
+        },
+        {
+            "name": "acrloginname",
+            "type": "string",
+            "label": "ACR name",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Acr To Push"
+        },
+        {
+            "name": "acrpassword",
+            "type": "string",
+            "label": "ACR password",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Acr password To Push"
+        },
+        {
+            "name": "Tag",
+            "type": "string",
+            "label": "Buffer",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Tag Name"
+        },
+        {
+            "name": "Tag1",
+            "type": "string",
+            "label": "Loginserver",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Tag Name"
+        },
+        {
+            "name": "Tag2",
+            "type": "string",
+            "label": "Working path",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Tag Name"
+        },
+        {
+            "name": "failOnStderr",
+            "type": "boolean",
+            "label": "Fail on Standard Error",
+            "defaultValue": "false",
+            "required": false,
+            "helpMarkDown": "If this is true, this task will fail if any errors are written to the StandardError stream.",
+            "groupName": "advanced"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    },
+    "messages": {
+        "GeneratingScript": "Generating script.",
+        "JS_ExitCode": "Bash exited with code '%s'.",
+        "JS_Stderr": "Bash wrote one or more lines to the standard error stream.",
+        "PS_ExitCode": "Cmd.exe exited with code '{0}'.",
+        "PS_UnableToDetermineExitCode": "Unexpected exception. Unable to determine the exit code from cmd.exe.",
+        "ScriptContents": "Script contents:"
+    }
+    }
