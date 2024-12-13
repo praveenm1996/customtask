@@ -10,3 +10,8 @@ https://github.com/microsoft/azure-devops-extension-sample/tree/master
 https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks
 
 https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-build-task?view=azure-devops
+
+################
+
+https://github.com/microsoft/azure-pipelines-task-lib/blob/master/node/docs/azure-pipelines-task-lib.md
+################
